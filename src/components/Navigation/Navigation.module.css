@@ -1,0 +1,146 @@
+/*
+  NAVIGATION STYLES
+*/
+
+.nav {
+  /* Stick to the top of the viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  /* Stack above page content */
+  z-index: 30;
+  
+  /* Frosted glass effect */
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* Bottom border */
+  border-bottom: 1px solid var(--border-color);
+  
+  /* Smooth transitions */
+  transition: all 0.3s ease;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .nav {
+  background-color: rgba(17, 24, 39, 0.8);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  
+  /* Flexbox for layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+  /* Gradient text */
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Desktop Menu */
+.desktopMenu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.link {
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.link:hover {
+  color: var(--accent-primary);
+}
+
+/* Active link indicator */
+.link.active {
+  color: var(--accent-primary);
+}
+
+.link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 2px;
+}
+
+/* Mobile Menu Button */
+.mobileMenuButton {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 50;
+}
+
+.menuIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-primary);
+}
+
+/* Mobile Menu Dropdown */
+.mobileMenu {
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+  padding: 1rem 0;
+   z-index: 40;
+  position: relative;
+}
+
+.mobileLink {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.mobileLink:hover,
+.mobileLink.mobileActive {
+  color: var(--accent-primary);
+  background-color: var(--bg-secondary);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  /* Hide desktop menu */
+  .desktopMenu {
+    display: none;
+  }
+  
+  /* Show mobile button and menu */
+  .mobileMenuButton {
+    display: block;
+  }
+  
+  .mobileMenu {
+    display: block;
+  }
+}

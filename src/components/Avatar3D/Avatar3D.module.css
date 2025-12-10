@@ -1,0 +1,34 @@
+/*
+  3D AVATAR STYLES
+*/
+
+.container {
+  /* Container size */
+  width: 100%;
+  height: 24rem; /* 384px */
+  
+  /* Position for proper stacking */
+  position: relative;
+}
+
+.canvas {
+  /* Fill the container */
+  width: 100% !important;
+  height: 100% !important;
+  
+  /* Smooth rendering */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Responsive sizing */
+@media (max-width: 768px) {
+  .container {
+    height: 20rem; /* Smaller on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 16rem; /* Even smaller on phones */
+  }
+}

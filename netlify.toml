@@ -1,0 +1,23 @@
+# Netlify configuration file
+# This tells Netlify how to build and deploy your Next.js app
+
+[build]
+  # Command to build your project
+  command = "npm run build"
+  
+  # Directory where Next.js outputs the built files
+  publish = ".next"
+
+# This is VERY important for Next.js on Netlify
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Environment variables (optional - add if needed)
+# [build.environment]
+#   NODE_VERSION = "18"
+
+# Redirects and rewrites
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
