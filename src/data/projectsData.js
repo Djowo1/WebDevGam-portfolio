@@ -3,8 +3,8 @@ const projectsData = {
     title: 'OurVerse: The Ultimate Couple Platform',
     tagline: 'Connect, share, and celebrate your love online!',
     description: 'OurVerse is a dynamic platform designed for couples to stay connected and make memories together.',
-    longDescription: "OurVerse is a dynamic platform designed for couples to stay connected and make memories together. Built with React, Next.js, and MongoDB, it features real-time chat, shared memory albums, bucket lists, a couple calendar, notifications, and an intuitive dashboard. It's not just an app — it's a digital space for love, fun, and shared experiences.",
-    tech: ['React', 'Next.js', 'CSS Modules', 'MongoDB', 'Node.js', 'Socket.io'],
+    longDescription: "OurVerse is a dynamic platform designed for couples to stay connected and make memories together. Built with React, and MongoDB, it features real-time chat, shared memory albums, bucket lists, a couple calendar, notifications, and an intuitive dashboard. It's not just an app, it's a digital space for love, fun, and shared experiences.",
+    tech: ['React', 'CSS Modules', 'MongoDB', 'Node.js', 'Socket.io'],
     features: [
       'Real-time chat with instant messaging',
       'Shared memory albums with cloud storage',

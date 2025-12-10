@@ -1,30 +1,17 @@
-/*
-  NAVIGATION STYLES
-*/
-
-.nav {
-  /* Stick to the top of the viewport */
+ .nav { 
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  
-  /* Stack above page content */
-  z-index: 30;
-  
-  /* Frosted glass effect */
+  right: 0; 
+  z-index: 30; 
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  
-  /* Bottom border */
-  border-bottom: 1px solid var(--border-color);
-  
-  /* Smooth transitions */
+  -webkit-backdrop-filter: blur(12px); 
+  border-bottom: 1px solid var(--border-color); 
   transition: all 0.3s ease;
 }
 
-/* Dark mode adjustments */
+ 
 [data-theme="dark"] .nav {
   background-color: rgba(17, 24, 39, 0.8);
 }
@@ -33,8 +20,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
-  
-  /* Flexbox for layout */
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +30,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   
-  /* Gradient text */
+   
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,7 +40,7 @@
   transition: transform 0.3s ease;
 }
 
-/* Desktop Menu */
+ 
 .desktopMenu {
   display: flex;
   gap: 2rem;
@@ -73,7 +59,7 @@
   color: var(--accent-primary);
 }
 
-/* Active link indicator */
+ 
 .link.active {
   color: var(--accent-primary);
 }
@@ -89,9 +75,9 @@
   border-radius: 2px;
 }
 
-/* Mobile Menu Button */
+ 
 .mobileMenuButton {
-  display: none; /* Hidden on desktop */
+  display: none;  
   background: none;
   border: none;
   cursor: pointer;
@@ -105,7 +91,7 @@
   color: var(--text-primary);
 }
 
-/* Mobile Menu Dropdown */
+ 
 .mobileMenu {
   background-color: var(--bg-primary);
   border-top: 1px solid var(--border-color);
@@ -130,12 +116,12 @@
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-  /* Hide desktop menu */
+  
   .desktopMenu {
     display: none;
   }
   
-  /* Show mobile button and menu */
+  
   .mobileMenuButton {
     display: block;
   }

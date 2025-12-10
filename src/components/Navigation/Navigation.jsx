@@ -3,12 +3,11 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Navigation.module.css';
 
-
 const Navigation = ({ activeSection }) => {
   
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  // All sections of the website
+  
   const sections = [
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About' },
@@ -58,12 +57,12 @@ const Navigation = ({ activeSection }) => {
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? (
-            // X icon to close
+            
             <svg className={styles.menuIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            // Hamburger icon to open
+           
             <svg className={styles.menuIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
