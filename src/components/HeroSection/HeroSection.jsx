@@ -160,21 +160,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      <motion.div
-        className={styles.scrollIndicator}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-      >
-        <motion.div
-          className={styles.mouse}
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          <div className={styles.mouseWheel}></div>
-        </motion.div>
-        <span></span>
-      </motion.div>
+     
     </section>
   );
 };
