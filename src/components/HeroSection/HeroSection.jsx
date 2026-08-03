@@ -173,7 +173,7 @@ const HeroSection = () => {
         >
           <div className={styles.mouseWheel}></div>
         </motion.div>
-        <span>Scroll to explore</span>
+        <span></span>
       </motion.div>
     </section>
   );
