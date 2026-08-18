@@ -5,6 +5,26 @@ import styles from './ProjectsSection.module.css';
 const ProjectsSection = () => {
   const projects = [
     {
+      id: 'bellybuysbyify',
+      title: 'BellyBuys Enterprise',
+      shortDesc: 'Food catering & logistics — marketing and ordering platform',
+      desc: 'BellyBuys Enterprise showcases menus, booking, and ordering with a warm food-focused design.',
+      tech: ['Next.js', 'React', 'CSS Modules', 'JavaScript', 'Firebase', 'Framer Motion', 'Cloudinary', 'Three.js', 'Email.js'],
+      image: '/portfolio-img/belly1.png',
+      gradient: 'from-yellow-300',
+      featured: true
+    },
+    {
+      id: 'gurgorpister',
+      title: 'Echoes & Cards (Gurgorpister)',
+      shortDesc: 'Tarot reading & booking platform',
+      desc: 'A luxury-styled SPA for browsing readers, booking sessions, and processing payments.',
+      tech: ['React', 'CSS Modules', 'Framer Motion', 'Embla Carousel', 'Firebase', 'Flutterwave', 'Stripe'],
+      image: '/portfolio-img/gurgorpister1.png',
+      gradient: 'from-indigo-400',
+      featured: false
+    },
+    {
       id: 'ourverse-couple-app',
       title: 'OurVerse: The Ultimate Couple Platform',
       shortDesc: 'Connect, share, and celebrate your love online!',
@@ -74,37 +94,6 @@ const ProjectsSection = () => {
       gradient: 'from-blue-300',
       featured: false
     }
-    // ,
-    // {
-    //   id: 'image-searcher',
-    //   title: 'Image Searcher Project',
-    //   shortDesc: 'API-integrated image search',
-    //   desc: 'Developed a responsive website that allows users to search for images using an API with zoom features.',
-    //   tech: ['HTML', 'CSS', 'JavaScript'],
-    //   image: '🖼️',
-    //   gradient: 'from-purple-400',
-    //   featured: false
-    // },
-    // {
-    //   id: 'coming-soon-gym',
-    //   title: 'Coming Soon Website for Gym',
-    //   shortDesc: 'Landing page with countdown',
-    //   desc: 'Created a responsive coming soon page for a gym with engaging animations and countdown timer.',
-    //   tech: ['HTML', 'CSS', 'JavaScript'],
-    //   image: '⏳',
-    //   gradient: 'from-green-300',
-    //   featured: false
-    // },
-    // {
-    //   id: 'music-app',
-    //   title: 'Music App Project',
-    //   shortDesc: 'Interactive music player',
-    //   desc: 'Developed a music app that allows users to play, mix, and interact with songs with engaging UI.',
-    //   tech: ['HTML', 'CSS', 'JavaScript'],
-    //   image: '🎵',
-    //   gradient: 'from-indigo-400',
-    //   featured: false
-    // }
   ];
 
   return (

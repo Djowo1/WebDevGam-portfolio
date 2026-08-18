@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
 import styles from './Avatar3D.module.css';
@@ -33,11 +33,19 @@ const AnimatedSphere = () => {
 };
 
 const Avatar3D = () => {
+  useEffect(() => {
+    // Force a resize event on mount to ensure the three.js canvas
+    // correctly sizes on mobile / when layout shifts occur.
+    const t = setTimeout(() => window.dispatchEvent(new Event('resize')), 50);
+    return () => clearTimeout(t);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Canvas 
         camera={{ position: [0, 0, 5] }}
         className={styles.canvas}
+        style={{ width: '100%', height: '100%' }}
       >
         <ambientLight intensity={0.5} />
         <directionalLight

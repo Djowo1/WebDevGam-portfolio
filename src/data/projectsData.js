@@ -265,6 +265,73 @@ const projectsData = {
     role: 'Frontend Developer',
     year: '2024'
   },
+  'gurgorpister': {
+    title: 'Echoes & Cards (Gurgorpister)',
+    tagline: 'Tarot reading & booking platform for King Jorgas',
+    description: 'A dark, immersive single-page application for tarot readings with reader selection, booking and integrated payments.',
+    longDescription: `Echoes & Cards is a luxury-styled SPA built for tarot reader King Jorgas. The site lets visitors browse expert readers, learn the process, and book paid sessions end-to-end. The design emphasizes moody photography, elegant typography, and smooth motion to create a premium experience. The booking flow maintains selected reader and session state before handing off to the payment gateway.`,
+    tech: ['React', 'CSS Modules', 'JavaScript', 'Framer Motion', 'Embla Carousel', 'Flutterwave', 'Stripe', 'Firebase'],
+    features: [
+      'Immersive hero with full-bleed photography and CTA',
+      'Reader selection with profiles and availability',
+      'Step-by-step booking flow with payment integration',
+      'FAQ and How-It-Works flow to reduce friction',
+      'Smooth Framer Motion transitions and micro-interactions',
+      'Responsive single-page architecture with in-page routing'
+    ],
+    challenges: [
+      { problem: 'Building a smooth booking-to-payment flow', solution: 'Managed reader/session state then integrated Flutterwave/Stripe for transactions' },
+      { problem: 'Delivering premium motion without jank', solution: 'Used Framer Motion with staged animations and lazy-loaded heavy assets' }
+    ],
+    images: [
+      '/portfolio-img/gurgorpister1.png',
+      '/portfolio-img/gurgorpister2.png',
+      '/portfolio-img/gurgorpister4.png',
+      '/portfolio-img/tarot4.png',
+      '/portfolio-img/tarot6.png',
+      '/portfolio-img/tarot7.png',
+      '/portfolio-img/tarot3.png',
+      '/portfolio-img/tarot8.png',
+      '/portfolio-img/gurgorpister3.png'
+    ],
+    video: null,
+    github: 'https://github.com/Djowo1/gurgorpister',
+    live: 'https://gurgorpister.netlify.net',
+    duration: '2 months',
+    role: 'Product Designer & Frontend',
+    year: '2026'
+  },
+  'bellybuysbyify': {
+    title: 'BellyBuys Enterprise',
+    tagline: 'Food catering & logistics — marketing and ordering platform',
+    description: "A full-featured marketing and ordering site for a catering and meal-logistics business based in Ile-Ife.",
+    longDescription: `BellyBuys Enterprise showcases the brand story and provides customers with clear paths to explore menus, book catering services, and place orders. The design pairs warm food photography with a modern dark-themed UI. The site includes an animated hero carousel, interactive filterable menu, portfolio gallery mixing images and video, and a persistent order CTA to drive conversions.`,
+    tech: ['Next.js', 'React', 'CSS Modules', 'JavaScript', 'Firebase', 'Framer Motion', 'Cloudinary', 'Three.js', 'Email.js', 'Netlify'],
+    features: [
+      'Animated hero carousel with autoplay and manual controls',
+      'Interactive filterable menu with categories',
+      'Portfolio grid with image and embedded video tiles',
+      'About and brand story section with credibility markers',
+      'Persistent floating "Order Now" CTA',
+      'Dark/light theme toggle and full responsive layout'
+    ],
+    challenges: [
+      { problem: 'Efficient menu filtering and state', solution: 'Local component state with memoized item lists' },
+      { problem: 'Balancing imagery and performance', solution: 'Responsive image sizes and lazy-loading media' }
+    ],
+    images: [
+      '/portfolio-img/belly1.png',
+      '/portfolio-img/belly2.png',
+      '/portfolio-img/belly3.png',
+      '/portfolio-img/belly4.png'
+    ],
+    video: null,
+    github: 'https://github.com/Djowo1/bellybuys-enterprise',
+    live: 'https://bellybuysbyify.netlify.app/',
+    duration: '1.5 months',
+    role: 'Frontend Developer',
+    year: '2026'
+  },
 };
 
 export default projectsData;
