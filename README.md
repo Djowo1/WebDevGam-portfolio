@@ -1,41 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# WebDevGam
 
-## Getting Started
+Hi, I’m Djowo.
 
-First, run the development server:
+I’m a frontend developer focused on React, Next.js, JavaScript, HTML, and CSS. I build clean, responsive web interfaces and small web apps that look good and work well.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I like creating projects that are visually strong, easy to use, and simple to understand. My work spans landing pages, portfolio work, interactive UI, and product-style web experiences.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Featured project
+My main showcase is gurgorpister — the project I want people to see first:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- https://github.com/Djowo1/gurgorpister
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Portfolio and projects
+- https://webdevgam.netlify.app
+- https://github.com/Djowo1/gurgorpister
+- https://github.com/Djowo1/bellybuys-enterprise
+- https://github.com/Djowo1/CinemaNest_React_App
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## What I can do
+- Build responsive landing pages
+- Create modern UI for startups and small businesses
+- Convert designs into frontend code
+- Work on React and Next.js projects
+- Help with frontend features, UI improvements, and small product builds
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech stack
+- JavaScript
+- React
+- Next.js
+- HTML
+- CSS
+- Firebase
+- Vercel / Netlify
 
-## Learn More
+## Contact
+- Email: olowogokeayodejigamaliel@gmail.com
+- LinkedIn: https://linkedin.com/in/webdevgam
+- Portfolio: https://webdevgam.netlify.app
+- GitHub: https://github.com/Djowo1
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
-"# WebDevGam-portfolio" 
+I’m open to paid work, collaborations, and open-source projects where I can contribute and keep learning.
